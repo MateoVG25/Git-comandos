@@ -1,0 +1,36 @@
+----- CONFIGURACIÓN POR PRIMERA VEZ AL INSTALAR GIT -----
+
+$ git config --global user.name "nombreusuario"
+(este nombre va a estar vinculado a tus cambios confirmados "commits")
+
+$ git config --global user.email "tucorreo@blablabla.com"
+(este vincula el correo ingresado con tus commits)
+
+----- CREAR, CLONAR O CONECTAR REPOSITORIOS -----
+
+$ git init nombredelproyecto
+(aqui lo que haces es inicializar o crear un repositorio local con el nombre ingresado)
+
+$ git clone url
+(simplemente pegas el https o la ssh que aparece en tu repositorio en Github)
+
+$ git remote add origin ssh
+(se usa mas el ssh debido a que si ingresas con tu https tienes que proporcionar tus credenciales cada vez que ingreses)
+
+----- CAMBIOS, AGREGAR, ENVIAR, TRAER -----
+
+$ git status
+(nos permite saber que cambios se han realizado en las carpetas y/o archivos)
+
+$ git add archivo.txt
+(aqui le decimos a Git que empiece a rastrear los cambios del archivo, se conoce como Staging)
+
+$ git add .
+(a diferencia del otro add, aqui hacemos rastreo a todos los archivos con cambios nuevos)
+
+$ git commit -m "Mensaje de envio"
+(Prepara el envio de los archivos/carpetas despues de haber usado el comando add, la -m se refiere a mensaje)
+
+$ git push -u origin master
+(envia tus commits locales al repositorio remoto con la rama que es escribas, sea master o la que elijas)
+
