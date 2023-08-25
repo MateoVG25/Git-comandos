@@ -12,7 +12,7 @@ $ git init nombredelproyecto
 (aqui lo que haces es inicializar o crear un repositorio local con el nombre ingresado)
 
 $ git clone url
-(simplemente pegas el https o la ssh que aparece en tu repositorio en Github)
+(simplemente pegas el https o la ssh que aparece en tu repositorio en Github, si ya realizaste un git init no hay necesidad de usar este comando)
 
 $ git remote add origin ssh
 (se usa mas el ssh debido a que si ingresas con tu https tienes que proporcionar tus credenciales cada vez que ingreses)
